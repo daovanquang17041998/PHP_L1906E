@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #target{
+            background: #89e4ff;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 50px;
+            right: 0;
+
+        }
+        .container{
+            position: relative;
+            background: orange;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="target">
+        absolute
+    </div>
+</div>
+
+<pre>
+    Thẻ absolute nằm trong 1 thẻ div khác và thẻ mẹ này có position = relative
+    thì thẻ con absolute sẽ dựa vào vị trí của thẻ mẹ relative để đặt vị trí toạ độ
+</pre>
+</body>
+</html>

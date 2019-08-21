@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<pre>
+ Sự kiện click chuột trong js
+    $("#btn1") : chọn ID
+    $("div") : chọn tên thẻ
+    $(".target") : chọn class
+</pre>
+<script>
+    $(document).ready(function () {
+       $("button").click(function () {
+           $(".p").css("background","Green");
+       })
+    });
+</script>
+<p class="p">Dao Van Quang</p>
+<button>Hide</button>
+</body>
+</html>

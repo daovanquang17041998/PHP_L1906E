@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .font1{
+            font-family: "Candara",VnTime;
+        }
+        .font2{
+            font-family: "Times New Roman",Candara;
+        }
+    </style>
+</head>
+<body>
+<pre>
+    font-family:
+     font-family : kiểu font chữ cho văn bản
+    có 3 kiểu font chính :
+    1 generic font : những font chữ mà kiểu hiển thị tương tự nhau
+    2 font family : font cụ thể ( tahoma , time new roman )
+    font-family: "Times New Roman", Times, Serif;
+    khi sử dụng font-family sẽ có dạng fallback
+    các máy tính khác nhau thì có cài đặt font khác nhau
+    thư mục cài đặt font : C://windows/Fonts
+    có những máy có font này nhưng khong có font kia
+    thì trình duyệt font-family: "Times New Roman", Times, Serif;
+    sẽ tìm cái font time new roman nếu font này có trên PC thì sẽ hiển thị
+    nếu không có thì tim sang font times
+    nếu times lại không có thì sẽ tìm sang họ font serief
+    ***
+    các font có nhiều hơn 1 chữ cái ví dụ "Times New Roman" thì phải đặt font trong ""
+    nếu font chỉ có 1 chữ như tahoma thì không cần đặt trong nháy kép
+</pre>
+<div class="font1">
+    nội dung văn bản 1
+</div>
+<div class="font2">
+    nội dung văn bản 2
+</div>
+</body>
+</html>

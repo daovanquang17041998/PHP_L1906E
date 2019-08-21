@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<pre>
+    Jquery document ready
+    Selector là bộ chọn trong jquery để chọn được thẻ html dựa trên class,id,tag name
+    Selector bắt đầu bằng : $("selector") hoặc $('selector')
+    Riêng document hoặc window thì không cần đặt trong nháy kép
+    Cú pháp document ready : $(document).ready();
+    Bên trong ready sẽ là 1 callback js
+    Callback js chính là 1 hàm nhưng không có tên : function() { // code của hàm }
+    Callback có nghĩa là hành động sẽ thực hiện sau 1 hành đông nào đó
+    Ví dụ khi mà document bao gồm các thẻ html , css , js , hình ảnh được load xong
+    thì callback trong $(document).ready(); mới chạy
+</pre>
+<script>
+    $(document).ready(function () {
+       alert("document ready");
+    });
+    $("p").hide();
+</script>
+<script>
+    $(document).ready(function () {
+       $("button").click(function () {
+           $("p").hide();
+       })
+    });
+</script>
+<p>Dao Van Quang</p>
+<button>Hide</button>
+</body>
+</html>

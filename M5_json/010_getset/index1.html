@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+</head>
+<body>
+<pre>
+    text() lấy văn bản
+    text(txt) dùng để đặt văn bản
+
+</pre>
+<p id="txt"> Text method text()</p>
+<p id="txt1"> Text1 method text()</p>
+<p id="txt2"> Text2 method text()</p>
+<button id="move">move</button>
+<script type="text/javascript">
+$("#move").on("click",function () {
+    var txt = $("#txt").text();
+    $("#txt1").text(txt)
+})
+</script>
+</body>
+</html>

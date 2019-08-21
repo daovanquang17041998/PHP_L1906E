@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+       #wrap{
+          overflow: auto;
+       }
+        #sidebar{
+          width: 30%;
+            float: left;
+        }
+        #main{
+            width: 70%;
+            float: right;
+            background: #65ffe4;
+            color: #fad9ff;
+        }
+        @media screen and (max-width: 600px){
+            #sidebar{
+             float: none;
+                width: 100%;
+            }
+            #main{
+                float: none;
+                width: 100%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="sidebar">
+        <ul>
+            <li>van hoa</li>
+            <li>the thao</li>
+            <li>tin tuc</li>
+            <li>giai tri</li>
+            <li>vo thuat</li>
+        </ul>
+    </div>
+    <div id="main">
+        <h1>noi dung chinh cua trang</h1>
+        <p>noi dung 1</p>
+        <p>noi dung 2</p>
+        <p>noi dung 3</p>
+        <p>noi dung 4</p>
+
+    </div>
+</div>
+</body>
+</html>

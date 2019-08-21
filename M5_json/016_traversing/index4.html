@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <ul>
+            <li>
+                <a class="l1"href="#">Trang chủ</a>
+            <ul>
+                <li><a class="l2"href="#">Trang chủ</a></li>
+                <li><a class="l2"href="#">Sản phẩm</a></li>
+            </ul>
+            </li>
+            <li><a class="l1"href="#">1</a></li>
+            <li><a class="l1"href="#">2</a></li>
+            <li><a class="l1"href="#">3</a></li>
+            <li><a class="l1"href="#">4</a></li>
+        </ul>
+    </nav>
+</div>
+<button class="button">button</button>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".button").on("click",function () {
+            $("a.l2").parents("ul").css("border","1px solid yellow");
+    });
+});
+</script>
+</body>
+</html>

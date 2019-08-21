@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+   Hàm trong js
+    Function là tập hợp các câu lệnh để thực hiện 1 chức năng nào đó
+    mà khi cần thực hiện chức năng đó ta chỉ cần gọi hàm
+    thay vì phải viết lại câu lệnh này
+    ví dụ hàm tính tổng , hàm tính chu vi hình tròn , tính diện tích hình tròn ...
+
+    cú pháp khai báo hàm :
+    function tên_hàm(tham số 1, tham số 2 ...) {
+        // các câu lệnh trong hàm
+
+        // cuối hàm nếu muốn trả về biến sẽ sử dụng từ khóa return
+</pre>
+<p id="a">ket qua la: </p>
+<script type="text/javascript">
+    /*
+    a và b là 2 tham số truyền vào
+     */
+    function tinhtong(a,b) {
+        return a+b;
+    }
+    var ketqua = tinhtong(3,4);
+    console.log(ketqua);
+    document.getElementById("a").innerHTML=ketqua;
+</script>
+</body>
+</html>

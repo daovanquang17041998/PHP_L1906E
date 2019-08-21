@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <pre>
+    val() dùng để lấy giá trị trong ô input, text area , các thẻ nhập liệu trong form
+    val(value) dùng để đặt giá trị trong ô input, text area , các thẻ nhập liệu trong form
+</pre>
+    <form>
+        <input type="text" name="a" value="">
+        <input type="text" name="B" VALUE="">
+    </form>
+<p id="txt2"> Text2 method text()</p>
+<button id="move">move</button>
+<script type="text/javascript">
+$("#move").on("click",function () {
+    var txt = $("input[name='a']").val();
+    $("input[name='B']").val(txt);
+})
+</script>
+</body>
+</html>

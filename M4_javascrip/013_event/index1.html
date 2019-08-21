@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+    document.getElementById('target').innerHTML = "Sự kiện onclick trong js";
+    document là văn bản html
+    getElementById(id) để chọn 1 thẻ có id tương ứng
+    innerHTML để truy cập vào nội dung html của thẻ đó
+</pre>
+<div id="target">
+    Nội dung demo
+</div>
+<div id="demo">
+    Đào Văn Quang
+</div>
+<button onclick="changeContent()">Click vào tôi</button>
+
+<script type="text/javascript">
+    function changeContent() {
+        document.getElementById('target').innerHTML = "Sự kiện onclick trong js";
+    }
+</script>
+<button onclick="change()">Change</button>
+<script type="text/javascript">
+    function  change() {
+        document.getElementById('demo').innerHTML = "Học giỏi v"
+    }
+</script>
+</body>
+</html>

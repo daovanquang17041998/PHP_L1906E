@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Nhóm các phương thức chọn hậu duệ</h1>
+<p>Phương thức find() sẽ cho phép truyền vào filter để lọc các thẻ html bên trong</p>
+
+<div class="container">
+    <nav>
+        <ul class="ullevel1">
+            <li class="home"><a class="lvl1" href="#">Trang chủ</a>
+                <ul class="ullevel2">
+                    <li><a class="lvl2" href="#">Trang chủ 1</a></li>
+                    <li><a class="lvl2" href="#">Trang chủ 2</a></li>
+                </ul>
+            </li>
+            <li class="intro"><a class="lvl1" href="#">Giới thiệu</a></li>
+            <li class="product"><a class="lvl1" href="#">Sản phẩm</a></li>
+            <li class="new"><a class="lvl1" href="#">Tin tức</a></li>
+            <li class="contact"><a class="lvl1" href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div style="margin-top: 30px">
+    <button id="control">Control</button>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#control").click(function () {
+            $("ul.ullevel1").find(".lvl2").css({"border":"1px solid red","display":"block","padding":"30px"});
+        });
+    });
+</script>
+</body>
+</html>

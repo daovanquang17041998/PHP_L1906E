@@ -1,0 +1,41 @@
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.body{
+    width: 700px;
+    margin: 0 auto;
+
+}
+header .header{
+    background: #6fff63;
+    text-align: center;
+    font-size: 30px;
+    height: 100px;
+    padding: 20px 0;
+
+}
+header .main-nav .main-menu{
+    background: #fdf824;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+.main-nav .main-menu li{
+    background: coral;
+    float: left;
+}
+.main-nav .main-menu li a{
+    background: bisque;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: #1f1bff;
+}
+
+header .main-nav .main-menu li a:hover{
+    background-color: #ff4336;
+}

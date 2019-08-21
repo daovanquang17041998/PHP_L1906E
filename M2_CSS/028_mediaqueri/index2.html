@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*
+        áp dụng cho màn hình từ 0 đến vô cực
+         */
+        #taget{
+            background: #ffbcad;
+            width: 500px;
+            height: 500px;
+        }
+        /*
+       áp dụng cho màn hình có độ rộng từ 600px đến vô cực
+        */
+        @media screen and (max-height: 600px){
+            #taget{
+                background: #2719ff;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>media query trong css</h1>
+<pre>
+    media query là kỹ thuật xây dựng những đoạn css áp dụng cho tường loại màn hình khác nhau
+    có độ rộng khác nhau
+     @media screen and (min-width: 600px)
+    Cú pháp bắt đầu bằng @media
+    Tiếp theo kiểu màn hình screen or print
+    and : điều kiện ( tức là màn hình và 1 điều kiện đi kèm )
+    (min-width: 600px) : được hiểu là áp dụng màn hình có kích cỡ từ 600px trở lên
+    (max-width: 600px) : được hiểu là áp dụng màn hình có kích cỡ từ 600px trở xuống
+
+
+</pre>
+<div id="taget">
+    nội dung
+</div>
+</body>
+</html>

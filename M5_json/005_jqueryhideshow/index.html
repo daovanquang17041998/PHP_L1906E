@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<pre>
+ Sự kiện click chuột trong js
+    $("#btn1") : chọn ID
+    $("div") : chọn tên thẻ
+    $(".target") : chọn class
+</pre>
+<script>
+    $(document).ready(function () {
+     $(".hide").on("click",function () {
+         $(".div1").fadeIn();
+         $(".div2").fadeIn("slow");
+         $(".div3").fadeIn(3000);
+     })
+    });
+</script>
+<div class="div1" style="width: 100px;height:100px; background-color: #65ffe4;display:none" >div1</div>
+<div class="div2" style="width: 100px;height:100px; background-color: #ff512c;display:none">div2</div>
+<div class="div3" style="width: 100px;height:100px; background-color: #7bff34;display:none">div3</div>
+<button class="hide">Hide</button>
+</body>
+</html>

@@ -1,0 +1,338 @@
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*
+header
+ */
+.header{
+    box-sizing: border-box;
+    height: 170px;
+    max-height: 170px;
+    padding: 50px 0;
+}
+.header .logo{
+
+}
+.header nav.main-menu{
+
+}
+.header nav.main-menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+.header nav.main-menu li{
+    float: left;
+
+}
+.header nav.main-menu a{
+    display: inline-block;
+    padding: 10px;
+    color: #b8b8b9;
+    font-size: 20px;
+
+}
+.header nav.main-menu i{
+    font-size: 12px;
+    color: #b8b8b9;
+}
+/*
+banner
+ */
+.banner{
+    margin-top: -170px;
+    height: 935px;
+    width: 100%;
+    background: url("../images/banner.png") top center;
+    display: table;
+}
+.banner h1{
+    font-size: 93px;
+    color: #000000;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle ;
+}
+.banner h1 span{
+    color: #f66c27;
+}
+/*
+footer
+ */
+.footer
+{
+    background: linear-gradient(to right, #f66c27 50%, #ffffff 50%);
+}
+.footer .contact-form{
+    background: #f66c27;
+    box-sizing: border-box;
+    height: 700px;
+}
+.contact-form .content-form{
+    background: #ffffff;
+    padding: 60px;
+    margin-top: 130px;
+    margin-right: 100px;
+}
+.content-form input,textarea{
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+    width: 100%;
+    font-size: 15px;
+    color: #ffacbe;
+}
+.content-form input[type="text"]{
+    padding: 30px;
+}
+.first-row input{
+    width: 40%;
+}
+.first-row::after{
+    content: "";
+    clear: both;
+}
+.first-row input[name="email"]{
+    float: right;
+}
+.content-form input:focus textarea:focus{
+    outline: none;
+}
+.contact-form-row {
+    margin-bottom: 20px;
+}
+.submit-row{
+text-align: center;
+}
+.contact-form input[type="submit"]{
+    background: #f66c27;
+    color: #ffffff;
+    display: inline-block;
+    width: auto;
+    padding: 6px 20px;
+    border-radius: 32px;
+    font-size: 18px;
+}
+.footer{
+  margin-top: 50px;
+    clear: left;
+}
+.footer .contact-info{
+    box-sizing: border-box;
+    padding-left: 100px;
+    height: 700px;
+    background: #ffffff;
+
+}
+footer .contact-info h3{
+    margin-top: 108px;
+    font-size: 45px;
+}
+.line-contact-info{
+    padding: 20px 0px ;
+}
+.line-contact-info h4{
+    color: #333333;
+
+}
+.line-contact-info p{
+    font-size: 15px ;
+    max-width: 300px;
+    margin-left: 0;
+}
+.line-contact-info p span{
+    color: #f66c27;
+}
+footer .social-icon i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    background: #bbbbbb;
+    text-align: center;
+    color: #FFF;
+    margin-right: 20px;
+
+}
+.main-content{
+    background-color: #FFFFFF;
+}
+.main-content .content-two-bottom{
+margin-bottom: 0px;
+}
+.main-content .content-two-top{
+    height: 180px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    clear: both;
+}
+.main-content .content-two-top h1,p{
+    font-size: 17px;
+    color: #d4d4d4;
+    text-align: center;
+}
+.main-content .content-two-top h1{
+    font-size: 25px;
+    margin-top: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.main-content .content-three-form{
+    height: 400px;
+    padding-top: 60px;
+    background-color: #ff7b39;
+}
+.main-content .content-three-form p{
+    font-size: 180px;
+    text-indent: 10px;
+    letter-spacing: 22px;
+    color: #f99969;
+    position: absolute;
+
+
+}
+.main-content .content-three-form h1,p{
+    text-align: center;
+}
+.main-content .content-three-form .form-input{
+    text-align: center;
+    position: relative;
+
+}
+.main-content .content-three-form h1{
+    color: #ffffff;
+}
+.content-three-form input[name="name"]{
+    background: #ffffff;
+    color: #777777;
+    display: inline-block;
+    width: 500px;
+    padding: 6px 30px;
+    border-radius: 32px;
+    font-size: 18px;
+
+}
+.content-three-form input[type="submit"]{
+    background: #f66c27;
+    color: #ffffff;
+    display: inline-block;
+    width: 150px;
+    padding: 6px 20px;
+    border-radius: 32px;
+    font-size: 18px;
+
+}
+.main-content .content-four{
+    background-color: #f8f8f8;
+   margin-bottom: 70px;
+}
+.main-content .content-four-info{
+    width: 700px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+.main-content .content-four-info img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.main-content .content-four-info h1,p{
+    text-align: center;
+}
+.main-content .content-four-info p span{
+    color: #fb8b52;
+}
+.main-content .content-five{
+    width: 100%;
+}
+.main-content .content-five ,.img-right-2,.img-right-1,.img-left,.img-middle{
+    border: 4px solid #f8f8f8;
+}
+.main-content .content-five-left,.content-five-left,.content-five-middle{
+    width: 33%;
+    float: left;
+}
+.main-content .content-five-left .form{
+    padding-left: 100px;
+    padding-bottom: 50px;
+
+}
+.main-content .content-five-left .form button {
+    border-radius: 15px 15px 15px 15px;
+}
+.main-content .content-five-left img{
+    width: 330px;
+}
+
+
+.main-content .content-one-one .content-one .content-one-left,.content-one-middle,.content-one-right {
+    width: 34%;
+    float: left;
+    text-align: center;
+    margin-left: 110px;
+}
+.main-content .content-one-one .content-one{
+    background-color: #C4ECCE;
+}
+.main-content .content-one-one{
+    margin-top: 40px;
+    vertical-align: middle ;
+}
+.content-one-one .h1{
+    margin-left: 50px ;
+    padding-bottom: 30px;
+    clear: both;
+}
+.main-content .content-zero{
+   width: 100%;
+    padding-top: 60px;
+}
+.main-content .content-zero .content-zero-left{
+    width: 50%;
+    float: left;
+}
+.main-content .content-zero .content-zero-right{
+    width: 40%;
+    float: left;
+}
+.form  .form-input button{
+
+    border-radius: 20px 20px 20px 20px;
+}
+.form  .form-input{
+    padding-top: 30px;
+}
+
+.main-content .content-zero .content-zero-right{
+    margin-top: 30px;
+}
+.content-zero-left{
+    background-color: #eaeaea;
+}
+.content-zero-left img{
+    border: 5px solid whitesmoke;
+}
+.content-zero-left .intro1{
+    width: auto;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+}
+.content-zero-left .intro2{
+    width: 150px;
+    height: 150px;
+    margin-top: 150px;
+    margin-left: 150px;
+    z-index: 2;
+    position: absolute;
+}

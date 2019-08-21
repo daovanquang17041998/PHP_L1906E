@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+    Phạm vi của biến : biến toàn cục và biến cục bộ
+    Biến toán cục có ảnh hưởng trong toàn bộ chương trình
+    Biến cục bộ chỉ có ảnh hưởng trong function
+    các tham số của hàm là những biến cục bộ
+    những biến được khai báo trong hàm sẽ là biến cục bộ
+</pre>
+<script type="text/javascript">
+    /*
+    a,b là biến cục bó
+    a và b là 2 tham số truyền vào
+     */
+    function tinhtong(a,b) {
+        //c là biến cục bộ
+        var c=a+b;
+        return c;
+    }
+    /*
+    ketqua là biến toàn cục ảnh hướng đến toàn bộ chương trình
+
+     */
+    var ketqua = tinhtong(3,4);
+    console.log(c);
+    document.getElementById("a").innerHTML=ketqua;
+</script>
+</body>
+</html>

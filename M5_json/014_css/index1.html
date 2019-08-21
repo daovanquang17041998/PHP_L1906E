@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<h1>Jquery remove content </h1>
+<pre>
+    remove() gỡ bỏ bản thân selector va cả các thẻ bên trong nó
+    empty() chỉ gỡ bỏ các thẻ con bên trong nó
+
+</pre>
+<div class="remove" style=" padding: 40px; border: 2px solid #65ffe4">
+    <div>noi dung the div append</div>
+    <div>noi dung the div append</div>
+    <div>noi dung the div append</div>
+</div>
+<div class="button">
+    <button id="control">control</button>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".button").on("click",function () {
+            $(".remove").css("background","red");
+            $(".remove").css("padding","40px");
+            $(".remove").css("color","green");
+            $(".remove").css({"background":"green","color":"orange","padding":"30px"});
+    });
+
+
+});
+</script>
+</body>
+</html>

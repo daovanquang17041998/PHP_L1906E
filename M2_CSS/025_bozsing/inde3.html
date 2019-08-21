@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="nomalize.css">
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<pre style="font-size: 24px">
+    Thuộc tính box-sizing sẽ ccos 1 giá trị chính
+    1: content-box
+    2: border-box
+    giá trị mặc định là content-box
+    ***
+    khi mà các thuộc tinh width và heigh cho 1 thẻ html
+    thì kích thước width và height không bao giờ gồm padding và border
+    ví dụ width: 100px và height:100px
+    sau đó đặt padding và border cho thẻ nói trên dẫn đến kích thược cẩu thẻ sẽ tăng theo padding và border
+    để tránh diều này thì sẽ sử dụng box-sizing : border-box ;
+    lúc đó thuộc tính width và height của thẻ html sẽ bao gồm luôn cả padding và border
+    dẫn tới kích thước của thẻ sẽ không tăng lên khi thay đổi padding và border.
+</pre>
+</body>
+</html>

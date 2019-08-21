@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<pre>
+ Sự kiện click chuột trong js
+    $("#btn1") : chọn ID
+    $("div") : chọn tên thẻ
+    $(".target") : chọn class
+</pre>
+<script>
+    $(document).ready(function () {
+     $(".hide").on("click",function () {
+         $(".div2").slideUp();
+     });
+        $(".show").on("click",function () {
+
+            $(".div2").slideDown();
+        });
+    });
+</script>
+<div class="div1" style="width: 100px;height:100px; background-color: #65ffe4" >div1</div>
+<div class="div2" style=" width: 100px;height:100px; background-color: #ff512c  " >div2</div>
+<div class="div2" style=" width: 100px;height:100px; background-color: #7bff34">div3</div>
+<button class="hide">up</button>
+<button class="show">down</button>
+</body>
+</html>

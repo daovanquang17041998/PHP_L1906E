@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<h1>Jquery remove content </h1>
+<pre>
+    width() : lấy độ rộng của thẻ html
+    height() : lấy độ cao của thẻ html
+    innerWidth() : lấy độ rộng của thẻ html + padding left + padding right
+    innerHeight() : lấy độ cao của thẻ html + padding top + padding bottom
+    outerWidth() : lấy độ rộng của thẻ html + padding left + padding right + border
+    outerHeight() : lấy độ cao của thẻ html + padding top + padding bottom + border
+    outerWidth(true) : lấy độ rộng của thẻ html + padding left + padding right + border + margin
+    outerHeight(true) : lấy độ cao của thẻ html + padding top + padding bottom + border + margin
+</pre>
+<h1>Thông số của thẻ ( đơn vị pixel )</h1>
+<p id="a"> width() : </p>
+<p id="b"> height() : </p>
+<p id="c"> innerWidth() : </p>
+<p id="d"> innerHeight() : </p>
+<div class="remove" style=" padding: 40px; border: 2px solid #65ffe4">
+    <div>noi dung the div append</div>
+    <div>noi dung the div append</div>
+    <div>noi dung the div append</div>
+</div>
+<div class="button">
+    <button id="control">control</button>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".button").on("click",function () {
+           var a = $(".remove").width();
+            var b = $(".remove").height();
+            var c = $(".remove").innerWidth();
+            var d = $(".remove").innerHeight();
+            $("#a").append(a);
+            $("#b").append(b);
+            $("#c").append(c);
+            $("#d").append(d);
+    });
+
+
+});
+</script>
+</body>
+</html>

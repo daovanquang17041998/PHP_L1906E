@@ -1,0 +1,109 @@
+h1,h2,h3,h4,h5,h6
+{
+
+    margin: 0;
+    padding: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    font-size: 20px;
+}
+.top-header
+{
+    display: table;
+    width: 100%;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+.top-header .wrapper-content
+{
+    float: right;
+}
+.top-header .wrapper-content .menu,.top-header .wrapper-content .phone,.top-header .wrapper-content .search,.top-header .wrapper-content .cart
+{
+    float: left;
+    margin-right: 15px;
+}
+.top-header .wrapper-content .menu,.top-header .wrapper-content .phone
+{
+    color: #ddd;
+}
+.top-header .wrapper-content .menu li
+{
+    display: inline;
+}
+.footer-header
+{
+    display: table;
+    width: 100%;
+    padding-right: 40px;
+}
+.footer-header .logo-website img
+{
+    width: 40px;
+}
+.footer-header .wrapper-content-left{
+    float: left;
+}
+.footer-header .wrapper-content-right
+{
+    float: right;
+}
+
+.footer-header .wrapper-content-right ul.menu > li
+{
+    display: inline;
+}
+.footer-header .wrapper-content-sub-menu
+{
+    display: none;
+}
+.footer-header .wrapper-content-right ul.menu, .footer-header .wrapper-content-right .social{
+    float: left;
+    margin-right: 10px;
+}
+.footer-header .wrapper-content-right ul.menu > li > a{
+    color: #08c;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-right: 10px;
+}
+.footer-header .wrapper-content-right ul.menu > li > a:hover, .footer-header .wrapper-content-right ul.menu .active{
+    background: #08c;
+    color: #fff;
+    border-radius: 10px;
+}
+.footer-header .wrapper-content-right :hover .wrapper-content-sub-menu{
+   display: block;
+}
+
+.social i{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    line-height: 40px;
+    background: #ffecec;
+    text-align: center;
+    color: black;
+    margin-right: 20px;
+
+}
+.logo-website{
+    padding-left: 100px;
+    padding-top: 50px;
+}

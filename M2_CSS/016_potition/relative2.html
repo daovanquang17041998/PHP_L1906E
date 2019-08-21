@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        #target {
+            background: red;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body >
+<div id="target">
+    the div
+</div>
+<pre>
+    Thuộc tính relative khi sử dụng các thuộc tính đi kèm như top , left , right , bottom
+    thì thẻ html đó sẽ di chuyển dựa trên cái vị trí ban đầu của nó
+    giả sử
+    ban đầu nó có toạ độ : 15*15 ( top: 15px ; left: 15px )
+    nhưng khi sử dụng các thuộc tính css position:relative và top : 30px , left 30px )
+    => toạ độ mới của nó sẽ lấy toạ độ cũ ban đầu + với các thuộc css  top , left , right , bottom
+    để tạo ra toạ độ mới => top ( 45px ) left ( 45px )
+</pre>
+</body>
+</html>

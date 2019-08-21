@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="nomalize.css">
+    <style type="text/css">
+        .container{
+            background: orange;
+            padding: 20px;
+            margin: 30px auto;
+            width: 800px;
+        }
+        .row{
+            padding: 20px;
+            background: green;
+            overflow: auto;
+        }
+        .col1{
+            padding: 20px 0;
+            float: left;
+            width: 50%;
+            background: #65ffe4;
+        }
+        .col2{
+            padding: 20px 0;
+            float: left;
+            width: 50%;
+            background: #65ffe4;
+        }
+        .row::after{
+            content: 'noi dung cua after';
+            color: wheat;
+            display: block;
+            clear: both;
+        }
+        .row::before{
+            content: 'noi dung cua after';
+            color: wheat;
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col1">cột số 1</div>
+        <div class="col2">cột số 2</div>
+
+    </div>
+
+</div>
+<pre>
+    ::beefore: được sử dụng để thêm 1 nội dung vào phía trước bên trong thẻ html có thẻ là nội dung rỗng hoàn toàn với mục đich
+    ::beefore: đước ử dụng để thêm 1 nội dung vào phía sau bên trong thẻ html có thẻ là nội dung rỗng hoàn toàn với mục đich
+
+</pre>
+</body>
+</html>
