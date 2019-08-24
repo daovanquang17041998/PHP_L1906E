@@ -27,9 +27,23 @@ if(isset($_POST['luu'])&& $_POST['luu']=="sua"){
     $trang_thai=$_POST["trang_thai"];
     $id=$_POST["id"];
     $category_id=$_POST['category_id'];
+    //cap nhật ảnh
+    $anh_dai_dien=$_FILES['anh_dai_dien'];
+    $sql_update_anh="";
+    if($anh_dai_dien['name']){
+        $name=$anh_dai_dien['name'];
+        $a_anh_dai_dien="anh_dai_dien_{$id}_$name";
+        $tmp_name=$anh_dai_dien['tmp_name'];
+        move_uploaded_file($tmp_name,"images/news/$a_anh_dai_dien");
+        $sql_update_anh=",anh_dai_dien='images/news/$a_anh_dai_dien'";
+    }
     $sql="UPDATE `tin_tuc`
- SET tieu_de ='$tieu_de',noi_dung_ngan='$noi_dung_ngan',noi_dung_text='$noi_dung_text',trang_thai='$trang_thai',tin_noi_bat='$tin_noi_bat',anh_dai_dien='$anh_dai_dien',nhom_tin_tuc='$nhom_tin_tuc',category_id='category_id'
+ SET tieu_de ='$tieu_de',noi_dung_ngan='$noi_dung_ngan',noi_dung_text='$noi_dung_text',trang_thai='$trang_thai',tin_noi_bat='$tin_noi_bat' $sql_update_anh,nhom_tin_tuc='$nhom_tin_tuc',category_id='category_id'
 WHERE id='$id'";
+    mysqli_query($connection,$sql);
+    header("location: tin_tuc.php");
+}
+if(isset($_POST['huy'])){
     mysqli_query($connection,$sql);
     header("location: tin_tuc.php");
 }
@@ -39,6 +53,8 @@ if(isset($_GET['id'])&& is_numeric($_GET['id'])&&$_GET['id']!=0){
     $kq=mysqli_query($connection,$sql);
     $data=mysqli_fetch_array($kq);
 }
+
+
 $sql="SELECT * FROM `bang1`";
 $kq=mysqli_query($connection,$sql)
 ?>
@@ -70,7 +86,10 @@ $kq=mysqli_query($connection,$sql)
         </tr>
         <tr>
             <td>Ảnh đại diện</td>
-            <td><input type="text" name="anh_dai_dien" value="<?= $data['anh_dai_dien']?>"/></td>
+            <td>
+                <img class="anh-dai-dien" src="<?php echo $data['anh_dai_dien']?>" alt=""/>
+                <input type="file" name="anh_dai_dien"/>
+            </td>
         </tr>
         <tr>
             <td>Nhóm tin tức</td>

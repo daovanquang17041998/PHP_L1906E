@@ -9,7 +9,7 @@
 <body>
 <?php
 include_once "sql.php";
-$sql="SELECT * FROM `tin_tuc` left join `bang1` " ;
+$sql="SELECT a_tin_tuc.*,a_categories.category_name FROM `tin_tuc` AS a_tin_tuc LEFT JOIN `bang1` AS a_categories ON a_tin_tuc.`category_id`=a_categories.`category_id`";
 $kq=mysqli_query($connection,$sql);
 if(isset($_GET["action"]) && $_GET["action"]=="delete"){
     $id=$_GET["id"];
@@ -41,7 +41,7 @@ if(isset($_GET["action"]) && $_GET["action"]=="delete"){
                 else echo "Không";
                 ?></td>
             <td><?php echo $row['tin_noi_bat'] ?></td>
-            <td><?php echo $row['anh_dai_dien'] ?></td>
+            <td><img class="anh-dai-dien" src="<?php echo $row['anh_dai_dien'] ?>"></td>
             <td><?php echo $row['nhom_tin_tuc'] ?></td>
             <td><a href="sua_tin_tuc.php?action=edit&id=<?php echo $row['id'] ?>">sửa</a></td>
             <td><a href="tin_tuc.php?action=delete&id=<?php echo $row['id'] ?>">xóa</a></td>
